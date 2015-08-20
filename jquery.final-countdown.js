@@ -195,6 +195,8 @@
 
         // Hours
         var hours_width = $('#' + settings.selectors.canvas_hours).width();
+        hours_width = hours_width*4/3;
+        console.log(hours_width);
         var hoursStage = new Kinetic.Stage({
             container: settings.selectors.canvas_hours,
             width: hours_width,

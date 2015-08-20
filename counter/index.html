@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/demo.css">
 
-	<title>jQuery Final Countdown Plugin</title>
+	<title>2015HackNTU - Counter</title>
 </head>
 
 <body>
@@ -31,13 +31,13 @@
             </div>
         </div><!-- /.clock-item -->
 
-        <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3" style="margin: 0 auto; float:initial;">
+        <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-4" style="margin: 0 auto; float:initial;">
             <div class="wrap">
                 <div class="inner">
                     <div id="canvas-hours" class="clock-canvas"></div>
 
-                    <div class="text">
-                        <p class="val">0</p>
+                    <div class="text" style="position:relative; top:-240px;">
+                        <p class="val" style="font-size: 120px;">0</p>
                         <p class="type-hours type-time">HOURS</p>
                     </div><!-- /.text -->
                 </div><!-- /.inner -->
@@ -76,6 +76,10 @@
             </div><!-- /.clock-item -->
         </div>
     </div>
+    <div style="position:relative;">
+        <img src="./img/logo.png" style="position:absolute; left:0; right:0; bottom: 10px; margin:auto; width:300px;" alt="">
+    </div>
+
 </div><!-- /.countdown-wrapper -->
 
 
@@ -89,7 +93,7 @@
         
     	$('.countdown').final_countdown({
             'start': 1362139250,
-            'end': 1387607612,
+            'end': 1387611212,
             'now': 1387463612
         });
 
