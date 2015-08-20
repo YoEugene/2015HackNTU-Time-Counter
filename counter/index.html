@@ -18,27 +18,14 @@
 
 <div class="countdown countdown-container container">
     <div class="clock row">
-        <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3" style="opacity:0;">
-            <div class="wrap">
-                <div class="inner">
-                    <div id="canvas-days" class="clock-canvas"></div>
-
-                    <div class="text">
-                        <p class="val">0</p>
-                        <p class="type-days type-time">DAYS</p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- /.clock-item -->
-
-        <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-4" style="margin: 0 auto; float:initial;">
+       
+        <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3" style="margin: 0 auto; float:initial;">
             <div class="wrap">
                 <div class="inner">
                     <div id="canvas-hours" class="clock-canvas"></div>
 
-                    <div class="text" style="position:relative; top:-240px;">
-                        <p class="val" style="font-size: 120px;">0</p>
-                        <p class="type-hours type-time">HOURS</p>
+                    <div class="text">
+                        <a class="val" id="landingtext" style="position: relative;top: 15px;color: rgb(248,146,51);" href="./counter.html">START</a>
                     </div><!-- /.text -->
                 </div><!-- /.inner -->
             </div><!-- /.wrap -->
@@ -46,39 +33,6 @@
 
         
     </div><!-- /.clock -->
-    <div class="row">
-        <div class="col-md-6" style="">
-            <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-6" style="margin: 0 auto; float:initial;">
-                <div class="wrap">
-                    <div class="inner">
-                        <div id="canvas-minutes" class="clock-canvas"></div>
-
-                        <div class="text">
-                            <p class="val">0</p>
-                            <p class="type-minutes type-time">MINUTES</p>
-                        </div><!-- /.text -->
-                    </div><!-- /.inner -->
-                </div><!-- /.wrap -->
-            </div><!-- /.clock-item -->
-        </div>
-        <div class="col-md-6" style="">
-            <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-6" style="margin: 0 auto; float:initial;">
-                <div class="wrap">
-                    <div class="inner">
-                        <div id="canvas-seconds" class="clock-canvas"></div>
-
-                        <div class="text">
-                            <p class="val">0</p>
-                            <p class="type-seconds type-time">SECONDS</p>
-                        </div><!-- /.text -->
-                    </div><!-- /.inner -->
-                </div><!-- /.wrap -->
-            </div><!-- /.clock-item -->
-        </div>
-    </div>
-    <div style="position:relative;">
-        <img src="./img/logo.png" style="position:absolute; left:0; right:0; bottom: 10px; margin:auto; width:300px; opacity:0.7;" alt="">
-    </div>
 
 </div><!-- /.countdown-wrapper -->
 
@@ -93,7 +47,7 @@
         
     	$('.countdown').final_countdown({
             'start': 1362139250,
-            'end': 1387611212,
+            'end': 1387607612,
             'now': 1387463612
         });
 
